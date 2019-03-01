@@ -1,12 +1,20 @@
-<div class="jumbotron text-center">
-    <h1 class="">My ToDos</h1>
+
+<div class="card text-center" style="margin: 20px;
+padding: 40px;">
     <p class="lead">Chat for <b>My Todos</b></p>
+    <hr>
     <ng-template #buttons>
-        <a class="btn btn-info" [routerLink]="['/login']">Login</a>
-        <a class="btn btn-primary" [routerLink]="['/sign-up']">Sign-up</a> 
+        <a class="waves-effect waves-light btn" [routerLink]="['/login']">Login</a>
+        <a class="waves-effect waves-light btn" [routerLink]="['/sign-up']">Sign-up</a> 
     </ng-template>
     <div *ngIf="userService.loggedIn(); else buttons" class="container">
-        <h4 class="welcome">Welcome, {{ userService.getLoggedInUser().username }}</h4>
-        <button class="btn btn-success" routerLink="/chat">Start Chatting</button>
+        <div class="chip">
+            <img src="https://materializecss.com/images/yuna.jpg" alt="{{ userService.getLoggedInUser().username }}">{{ userService.getLoggedInUser().username }} <i class="close material-icons">close</i></div>
+            <br>
+            <br>
+        <button class="waves-effect waves-light btn deep-purple darken-3" routerLink="/chat">Start Chatting</button>
+            <br>
+            <br>
     </div>
 </div>
+

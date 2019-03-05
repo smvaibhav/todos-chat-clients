@@ -2,6 +2,8 @@ import { Router } from '@angular/router';
 import { FlashMessagesService } from 'angular2-flash-messages';
 import { UserService } from './../user.service';
 import { Component, OnInit } from '@angular/core';
+// import { TodosService } from './../todos.service';
+import { from } from 'rxjs/observable/from';
 
 @Component({
   selector: 'navbar',

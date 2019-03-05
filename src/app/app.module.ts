@@ -19,6 +19,7 @@ import { HomeComponent } from './home/home.component';
 import { ProfileComponent } from './profile/profile.component';
 import { ChatComponent } from './chat/chat.component';
 import { ChatroomComponent } from './chatroom/chatroom.component';
+import { TodosComponent } from './todos/todos.component';
 
 const routes = [
   {path: '', component: HomeComponent},
@@ -26,6 +27,7 @@ const routes = [
   {path: 'sign-up', component: SignUpComponent},
   {path: 'profile', component: ProfileComponent, canActivate: [AuthGuard]},
   {path: 'chat', component: ChatComponent, canActivate: [AuthGuard]},
+  {path: 'todos', component: TodosComponent, canActivate: [AuthGuard]},
   {path: 'chatroom', component: ChatroomComponent, canActivate: [AuthGuard]},
 ];
 
@@ -38,7 +40,8 @@ const routes = [
     HomeComponent,
     ProfileComponent,
     ChatComponent,
-    ChatroomComponent
+    ChatroomComponent,
+    TodosComponent
   ],
   imports: [
     BrowserModule,

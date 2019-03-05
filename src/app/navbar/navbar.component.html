@@ -1,5 +1,5 @@
 <nav class="navbar purple deep-purple darken-3">
-  <a  [routerLink]="['/']">MyTodos Chat</a>
+  <a class="logo z-depth-4 btn-floating pulse" [routerLink]="['/']">MyTodos Chat</a>
   <button class="waves-effect waves-light btn deep-purple darken-3" (click)="isCollapsed = !isCollapsed" type="button" data-toggle="collapse" data-target="#navItems" aria-controls="navItems" aria-expanded="false" aria-label="Toggle navigation">
       <span class="material-icons">menu</span>
   </button>
@@ -14,9 +14,13 @@
           </ng-template>
           <!-- user section  -->
          <!-- chat if user is logged in -->
+         <li *ngIf="userService.loggedIn()" [routerLinkActive]="['active']" class="nav-item">
+                <a class="nav-link text-dark dropdown-item cursor" routerLink="/todos">Todos</a>
+            </li>
           <li *ngIf="userService.loggedIn()" [routerLinkActive]="['active']" class="nav-item">
             <a class="nav-link text-dark dropdown-item cursor" routerLink="/chat">Chat</a>
         </li>
+       
         <!-- chat if user is logged in -->
           <li ngbDropdown *ngIf="userService.loggedIn(); else anonymous" class="nav-item dropdown">
                 <a  ngbDropdownToggle class="nav-link text-dark dropdown-toggle cursor" 

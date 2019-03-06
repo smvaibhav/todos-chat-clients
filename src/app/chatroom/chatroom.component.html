@@ -1,12 +1,15 @@
 <div id="mario-chat">
-    <h2>{{ username }}</h2>
+    <br>
+    <div class="chip"><img src="https://inovaeg.com/wp-content/uploads/2018/09/blank_male_avatar-150x150.jpg" alt="{{ username }}">{{ username }}</div>  
     <span><i *ngIf="isTyping" class="isTyping">Typing...</i></span>
     <div id="chat-window">
         <div *ngFor="let item of messageArray">
             <p [class.userMessage] = "item.user == userService.getLoggedInUser().username" [class.secUserMessage]="item.user != userService.getLoggedInUser().username">{{ item.message }}</p>                
         </div>
-        <!-- <div id="feedback"></div> -->
+        <div id="feedback"></div>
     </div>
-    <input (keypress)="typing()" [(ngModel)]="message" name="message" type="text" placeholder="Message" />            
-    <button id="send" (click)="sendMessage()">Send</button>    
+    <input (keypress)="typing()" [(ngModel)]="message" name="message" type="text" placeholder="Type a Message" />
+    <button id="send" (click)="sendMessage()"><i class="material-icons">send</i></button>    
 </div>
+<br>
+<br>

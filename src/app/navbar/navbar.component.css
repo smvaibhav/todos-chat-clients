@@ -1,20 +1,20 @@
 .site-name {
-    font-family: Lobster;
+    font-family: Roboto;
 }
 
-.nav-item :hover {
-    font-weight: bold;
-}
+/* .nav-item :hover {
+    text-transform: uppercase;
+} */
 
 .cursor {
     cursor: pointer;
 }
 
-.navbar {
+/* .navbar {
     -webkit-box-shadow: 0 8px 6px -6px #999;
     -moz-box-shadow: 0 8px 6px -6px #999;
     box-shadow: 0 8px 6px -6px #999;
-}
+} */
 .logo{
     color: white;
     text-decoration: none;

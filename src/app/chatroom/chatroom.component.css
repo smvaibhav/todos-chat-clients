@@ -2,11 +2,11 @@
 h2{
     font-size: 18px;
     padding: 10px 20px;
-    color: #0D570D;
+    color: rgb(196, 166, 0);
 }
 
 #mario-chat{
-    max-width: 1000px;
+    max-width: 90%;
     min-width: 500px;
     margin: 30px auto;
     border: 1px solid #ddd;
@@ -49,7 +49,7 @@ label{
     padding: 10px 20px;
 }
 
-input{
+/* input{
     padding: 10px 20px;
     box-sizing: border-box;
     background: #eee;
@@ -60,18 +60,18 @@ input{
     border-bottom: 1px solid #eee;
     font-family: Nunito;
     font-size: 16px;
-}
+} */
 
-#send{
-    background: #0C491B;
+/* #send{
+    background: rgb(0, 102, 185);
     color: #fff;
     font-size: 18px;
     border: 0;
     padding: 12px 0;
-    width: 100%;
-    border-radius: 10px;
+    width: 30%;
+    border-radius: 5px;
     cursor: pointer;
-}
+} */
 
 #leave {
     background: skyblue;

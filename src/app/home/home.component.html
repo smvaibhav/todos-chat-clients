@@ -5,14 +5,16 @@ padding: 40px;">
     <hr>
     <ng-template #buttons>
         <a class="waves-effect waves-light btn" [routerLink]="['/login']">Login</a>
+        <br>
         <a class="waves-effect waves-light btn" [routerLink]="['/sign-up']">Sign-up</a> 
     </ng-template>
     <div *ngIf="userService.loggedIn(); else buttons" class="container">
         <div class="chip">
-            <img src="https://materializecss.com/images/yuna.jpg" alt="{{ userService.getLoggedInUser().username }}">{{ userService.getLoggedInUser().username }} <i class="close material-icons">close</i></div>
-            <br>
-            <br>
-        <button class="waves-effect waves-light btn deep-purple darken-3" routerLink="/chat">Start Chatting</button>
+            <img src="https://cdndata.bigfooty.com/avatars/l/179/179693.jpg" alt="{{ userService.getLoggedInUser().username }}">{{ userService.getLoggedInUser().username }}
+        </div>
+         <br>
+         <br>   
+        <button class="waves-effect waves-light btn deep-purple darken-3" routerLink="/todos">ToDos</button>&nbsp;&nbsp;&nbsp;<button class="waves-effect waves-light btn deep-purple darken-3" routerLink="/chat">Chat Now</button>
             <br>
             <br>
     </div>

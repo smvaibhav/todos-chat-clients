@@ -26,6 +26,7 @@ const routes = [
   {path: '', component: HomeComponent},
   {path: 'login', component: LoginComponent},
   {path: 'sign-up', component: SignUpComponent},
+  {path: 'under-maintenance', component: UnderMaintenanceComponent},
   {path: 'profile', component: ProfileComponent, canActivate: [AuthGuard]},
   {path: 'chat', component: ChatComponent, canActivate: [AuthGuard]},
   {path: 'todos', component: TodosComponent, canActivate: [AuthGuard]},

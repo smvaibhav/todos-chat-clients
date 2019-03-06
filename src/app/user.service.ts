@@ -33,6 +33,6 @@ export class UserService {
   }
 
   getChatRoomsChat(chatRoom) {
-    return this.http.get('http://localhost:3000/chatroom/' + chatRoom);
+    return this.http.get('http://localhost:3000/api/chatroom/' + chatRoom);
   }
 }

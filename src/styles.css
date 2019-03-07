@@ -3,8 +3,48 @@
 @import "~bootstrap/dist/css/bootstrap.css";
 /* @import "~font-awesome/css/font-awesome.min.css"; */
 /* @import "~@angular/material/prebuilt-themes/indigo-pink.css"; */
-.iris{
-    position: fixed;
-    bottom: 0;
-    width: 100%;
-}
+.lds-dual-ring {
+    display: block;
+   margin-left: 50%;
+   margin-top: 30%;
+  }
+  .lds-dual-ring:after {
+    content: " ";
+    display: block;
+    width: 50px;
+    height: 50px;
+    
+    border-radius: 50%;
+    border: 6px solid #4527a0;
+    border-color: #4527a0 transparent #4527a0 transparent;
+    animation: lds-dual-ring 1.2s linear infinite;
+  }
+  @keyframes lds-dual-ring {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+  @media screen and (max-width: 600px) {
+    .lds-dual-ring {
+      display: block;
+      margin-left: 43.5%;
+      margin-top: 80%;
+    }
+    
+  }
+  @media screen and (max-width: 600px){
+    .lds-dual-ring:after {
+      content: " ";
+      display: block;
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+      border: 6px double #4527a0;
+      border-color: #4527a0 transparent #4527a0 transparent;
+      animation: lds-dual-ring 1.2s linear infinite;
+    }
+  }
+  

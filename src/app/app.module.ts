@@ -21,6 +21,7 @@ import { ChatComponent } from './chat/chat.component';
 import { ChatroomComponent } from './chatroom/chatroom.component';
 import { TodosComponent } from './todos/todos.component';
 import { UnderMaintenanceComponent } from './under-maintenance/under-maintenance.component';
+import { FooterComponent } from './footer/footer.component';
 
 const routes = [
   {path: '', component: HomeComponent},
@@ -44,7 +45,8 @@ const routes = [
     ChatComponent,
     ChatroomComponent,
     TodosComponent,
-    UnderMaintenanceComponent
+    UnderMaintenanceComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,
